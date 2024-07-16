@@ -1,0 +1,34 @@
+.dashBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.logo {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  animation: example 4s infinite;
+}
+
+@keyframes example {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+
+.browsebtn{
+  background-color: brown;
+  width: 180px;
+  transition: 0.4s;
+}
+
+.browsebtn:hover{
+  background-color: gold;
+  height: 50px;
+  width: 200px;
+}
