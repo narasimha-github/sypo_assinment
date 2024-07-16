@@ -3,8 +3,8 @@ import {useNavigate} from 'react-router-dom'
 import './index.css'
 
 const LogIn = () => {
-  const [useremail, setemail] = useState('')
-  const [userpassword, setPassword] = useState('')
+  const [user_email, setemail] = useState('')
+  const [user_password, setPassword] = useState('')
 
   const navigate = useNavigate('')
 
@@ -19,7 +19,7 @@ const LogIn = () => {
   const submitForm = async event => {
     event.preventDefault()
     const url = 'https://syoft.dev/Api/userlogin/api/userlogin'
-    const userDetails = {useremail, userpassword}
+    const userDetails = {user_email, user_password}
     const options = {
       method: 'POSt',
       body: JSON.stringify(userDetails),
