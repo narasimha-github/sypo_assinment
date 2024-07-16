@@ -3,10 +3,10 @@ import {useState} from 'react'
 import './index.css'
 
 const SignIn = () => {
-  const [userfirstname, setName] = useState('')
-  const [userpassword, setPass] = useState('')
-  const [useremail, setmail] = useState('')
-  const [userphone, setPhone] = useState('')
+  const [user_firstname, setName] = useState('')
+  const [user_password, setPass] = useState('')
+  const [user_email, setmail] = useState('')
+  const [user_phone, setPhone] = useState('')
   const [output, setOutput] = useState('')
 
   const navigation = useNavigate()
@@ -29,17 +29,17 @@ const SignIn = () => {
 
   const submitForm = async event => {
     event.preventDefault()
-    const userlastname = 'ni'
-    const usercity = 'Hydrabad'
-    const userzipcode = '500072'
+    const user_lastname = 'ni'
+    const user_city = 'Hydrabad'
+    const user_zipcode = '500072'
     const userDetails = {
-      userfirstname,
-      useremail,
-      userphone,
-      userpassword,
-      userlastname,
-      usercity,
-      userzipcode,
+      user_firstname,
+      user_email,
+      user_phone,
+      user_password,
+      user_lastname,
+      user_city,
+      user_zipcode,
     }
     const url =
       'https://syoft.dev/Api/user_registeration/api/user_registeration'
